@@ -161,6 +161,10 @@ body {
   color: var(--primary);
 }
 
+.about {
+  min-height: 100vh;
+}
+
 .about .row {
   display: flex;
 }
@@ -389,7 +393,7 @@ footer .creadit a {
   }
 
   .contact .row form {
-    padding: 0;
+    padding: auto;
     padding-left: 3rem;
     padding-right: 3rem;
   }
