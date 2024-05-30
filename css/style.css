@@ -411,6 +411,10 @@ footer .creadit a {
     transform: scaleX(0.2);
   }
 
+  .navbar .search-form {
+    width: 43rem;
+  }
+
   .about .row {
     flex-wrap: wrap;
   }
