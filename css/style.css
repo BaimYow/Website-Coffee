@@ -449,6 +449,7 @@ footer .creadit a {
   .contact .row {
     flex-wrap: wrap;
     width: 40rem;
+    height: 60rem;
   }
 
   .contact .row .map {
