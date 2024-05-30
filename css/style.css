@@ -411,7 +411,15 @@ footer .creadit a {
     transform: scaleX(0.2);
   }
 
+  .navbar .search-form {
+    width: 45rem;
+  }
+
   .navbar .search-form.active {
+    width: 40rem;
+  }
+
+  .navbar .search-form {
     width: 40rem;
   }
 
