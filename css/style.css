@@ -27,7 +27,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.4rem 7%;
+  padding: 1.4rem 4.5%;
   background-color: rgba(1, 1, 1, 0.8);
   border-bottom: 1px solid #513c28;
   position: fixed;
@@ -51,7 +51,7 @@ body {
   color: #fff;
   display: inline-block;
   font-size: 1.3rem;
-  margin: 0 1rem;
+  margin: 0 0.5rem;
 }
 .navbar .navbar-nav a:hover {
   color: var(--primary);
@@ -80,6 +80,41 @@ body {
 
 #hamburger-menu {
   display: none;
+}
+
+/* navbar search form */
+
+.navbar .search-form {
+  position: absolute;
+  top: 100%;
+  right: 7%;
+  background-color: #fff;
+  width: 50rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: 0.3s;
+}
+.navbar .search-form.active {
+  transform: scaleY(1);
+}
+
+.navbar .search-form input {
+  height: 100%;
+  width: 100%;
+  font-size: 3rem;
+  color: var(--bg);
+  padding: 1rem;
+}
+
+.navbar .search-form label {
+  cursor: pointer;
+  font-size: 2rem;
+  color: var(--bg);
+  margin-right: 1.5rem;
+  margin-top: 0.7rem;
 }
 
 /* Hero Section */
@@ -144,12 +179,14 @@ body {
 
 .about,
 .menu,
+.products,
 .contact {
   padding: 8rem 7% 1.4rem;
 }
 
 .about h2,
 .menu h2,
+.products h2,
 .contact h2 {
   text-align: center;
   font-size: 2.6rem;
@@ -157,6 +194,7 @@ body {
 }
 .about h2 span,
 .menu h2 span,
+.products h2 span,
 .contact h2 span {
   color: var(--primary);
 }
@@ -194,12 +232,14 @@ body {
 
 /* Menu Section */
 
-menu h2,
-.contact h2 {
+.menu h2,
+.contact h2,
+.products h2 {
   margin-bottom: 1rem;
 }
 .menu p,
-.contact p {
+.contact p,
+.products p {
   text-align: center;
   max-width: 30rem;
   margin: auto;
@@ -216,7 +256,7 @@ menu h2,
 
 .menu .row .menu-card {
   text-align: center;
-  padding-bottom: 4rem;
+  padding-bottom: 6.2rem;
 }
 
 .menu .row .menu-card img {
