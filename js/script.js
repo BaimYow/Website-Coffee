@@ -69,3 +69,5 @@ window.onclick = (e) => {
     itemDetailModal.style.display = "none";
   }
 };
+
+// konversi ke rupiah
