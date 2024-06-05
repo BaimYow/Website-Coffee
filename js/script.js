@@ -9,7 +9,7 @@ document.querySelector("#hamburger-menu").onclick = (e) => {
 // togle class active untuk search form
 const searchForm = document.querySelector(".search-form");
 const searchBox = document.querySelector("#search-box");
-const shoppingCart = document.querySelector(".shopping-cart");
+
 // ketika search form di klik
 
 document.querySelector("#search-button").onclick = (e) => {
@@ -18,6 +18,8 @@ document.querySelector("#search-button").onclick = (e) => {
   e.preventDefault();
 };
 
+// toggle classs active untuk shopping cart
+const shoppingCart = document.querySelector(".shopping-cart");
 document.querySelector("#shopping-cart-button").onclick = (e) => {
   shoppingCart.classList.toggle("active");
   e.preventDefault();
@@ -43,8 +45,7 @@ document.addEventListener("click", function (e) {
   }
 });
 
-// modal box
-
+// Modal Box
 const itemDetailModal = document.querySelector("#item-detail-modal");
 const itemDetailButtons = document.querySelectorAll(".item-detail-button");
 
@@ -55,19 +56,15 @@ itemDetailButtons.forEach((btn) => {
   };
 });
 
-// click tombol close
-
+// klik tombol close modal
 document.querySelector(".modal .close-icon").onclick = (e) => {
   itemDetailModal.style.display = "none";
   e.preventDefault();
 };
 
-//diluar modal
-
+// klik di luar modal
 window.onclick = (e) => {
   if (e.target === itemDetailModal) {
     itemDetailModal.style.display = "none";
   }
 };
-
-// konversi ke rupiah
